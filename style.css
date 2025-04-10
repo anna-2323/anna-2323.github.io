@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #0e1a2b; */
+  background-image: url("res/keras.jpg");
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fcfcfd;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #fcfcfd;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+nav a:hover {
+  color: #fcfcfd;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+main {
+  max-width: 800px;
+  background-color: #fcfcfd;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2em;
+  font-size: 1.4em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+.row {
+  display:flex;
+}
+
+.block {
+  text-align: center;
+  flex-basis: 100%;
+}
+.block img {
+  width: 200px;
+}
+
+.navigation {
+  text-align: center;
+}
+.navigation a {
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
